@@ -1,105 +1,146 @@
-
-body{
-background-color: whitesmoke;
-font-family: Arial, Helvetica, sans-serif;
-color: black;
-margin:0;
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
 }
 
-header{
-background-color: white;
-border-bottom:1px solid lightgray;
+header {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
 }
 
-.logo{
-border-radius:50%;
-text-align: ;
-}
-
-header h1{
-margin:10px;
-}
-
-nav{
-margin-top:10px;
-}
-
-nav a{
-text-decoration:none;
-color: blue;
-margin:10px;
-font-weight:500;
-}
-
-nav a:hover{
-text-decoration:underline;
-}
-
-nav ul{
-list-style:none;
-padding:0;
-}
-
-section{
-background-color:white;
-border:1px solid lightgray;
-border-radius:8px;
-padding:20px;
-margin:20px;
-}
-
-section img{
-margin-bottom:10px;
-}
-
-article{
-max-width:900px;
-margin:auto;
-}
-
-aside{
-text-align:center;
-margin:20px;
-}
-
-footer{
-text-align:center;
-padding:20px;
-color:gray;
-border-top:1px solid lightgray;
-}
-
-.dark-mode{
-background-color:black;
-color:white;
-}
-
-.dark-mode section{
-background-color:dimgray;
-border:1px solid gray;
-}
-
-.dark-mode header{
-background-color:dimgray;
-}
-
-.dark-mode footer{
-border-top:1px solid gray;
-}
-
-button{
-padding:8px 15px;
-border:none;
-border-radius:6px;
-background-color:green;
-color:white;
-cursor:pointer;
-}
-
-button:hover{
-background-color:darkgreen;
-}
-
-h2{
+header h1, h2 {
+    margin: 10px;
     text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+    margin: 10px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+article {
+    width: 100%;
+}
+
+section {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section img {
+    margin-bottom: 10px;
+}
+
+aside {
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: white
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    border-top: 1px solid lightgray;
+}
+
+
+.dark-mode {
+    background-color: black;
+    color: black;
+}
+
+.dark-mode section {
+    background-color: dimgray;
+    border: 1px solid gray;
+}
+
+.dark-mode header {
+    background-color: dimgray;
+}
+
+.dark-mode footer {
+    border-top: 1px solid gray;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: green;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.about .box {
+  background: #ffffff;
+  border-left: 6px solid #4CAF50;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
