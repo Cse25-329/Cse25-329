@@ -1,97 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-	
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
- 
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-			
-    <title>Playbook Capital Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayBook Capital – About</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-        <header>
-    <div class="container-fluid p-1 bg-primary text-center" >   
-        <h2>About Trading</h2>
-            
-        <label class="switch">
-            <input type="checkbox" onclick="toggleMode()">
-            <span class="slider"></span>
-        </label>
 
-        <button onclick="toggleMode()">Toggle Mode</button>
-        <nav>
+<header class="bg-primary text-white py-3">
+    <div class="container d-flex align-items-center justify-content-between">
 
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="feedback.html">Feedback</a> |
-            <link rel="stylesheet" href="style.css"> 
-        </nav>
-        </header>
+        <h2 class="m-0">About Trading</h2>
+
+        <div class="d-flex align-items-center">
+            <span class="me-2 fw-bold">Change-Mode</span>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+
     </div>
-    <main>
-        <p>Hi! I'm a forex trader intermade.</p>
-        <p>So, forex trading is basically like exchanging money, but with the goal of making a little extra cash. Imagine you have some pula, and you think the dollar is going to go up in value. You trade your pula for dollars now, and later, when the dollar gets “stronger,” you swap it back. That difference? That’s your profit.</p>
+</header>
 
-            <h3>1.How It Works</h3>
-           <br>
-            Currencies are always in pairs. You’re not just buying a dollar—you’re buying it against something else. 
-            <br>
-            For example:
-            <br>
-            (i).EUR/USD → Euro vs US Dollar
-            <br>
-            (ii).GBP/USD → British Pound vs US Dollar</p>
-            
-            Think of it like betting on which one will get stronger. You buy if you think the first currency will rise, and sell if you think it will fall.
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<main class="container my-4">
+    <div class="about">
         
-            <br>
-            It’s all about timing. Buy when it’s low, sell when it’s high. Sounds simple, but prices can jump up and down a lot, sometimes in minutes. That’s why traders watch charts and news all the time.</p>
-            <br>
-            <h3>2.Where It Happens</h3>
-            Trading takes place at:
-            <br>
-            +MetaTrader 4
-            <br>
-            +MetaTrader 5
-            <br>
-            +Tradingview implentation</p>
-
-            <h3>3.Facts and Myths about trading</h3>
-            #You can see live prices, graphs, and place trades with a click. It’s like a video game but with real money on the line.
-            <br>
-            #It’s open 24/7 you can trade any time.
-            <br>
-            #You can start with a small amount of cash.
-            <br>
-            #The market is huge, so opportunities are everywhere.
-            <br>
-            #You can lose money fast
-            <br>
-            #If you let emotions take over, you’ll make mistakes
-            <br>
-            #Using too much “borrowed money” can wipe out your account
-            <br>
-            #What Helps You Win
-            <br>
-            #Learn to read charts (technical analysis)
-            <br>
-            #Pay attention to world news (fundamental analysis) 
-            <br>
-            #Don’t risk more than you can afford
-            <br>
-            #Stay calm and patient</P>
-            <br>
-                <b>In short: Forex trading isn’t a quick rich scheme. It’s more like a skill you learn, practice, and slowly get better. Some people love it; some people get burned if they rush.
+        <div class="box">
+        <h3>1. How Trading Works</h3>    
+        <p>
+            Forex trading is like exchanging money with the aim of making profit.
+            You trade currency pairs, such as EUR/USD or GBP/USD, based on which one you believe
+            will get stronger. Traders buy low and sell high, using charts and news to make decisions.
         </p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Kealeboga Obonye</p>
-    </footer>
+        </div>
+
+        <div class="box">
+            <h3>2. Where Trading Happens</h3>
+            <p>
+                Trading platforms include:<br>
+                • MetaTrader 4<br>
+                • MetaTrader 5<br>
+                • TradingView
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>3. Facts and Myths About Trading</h3>
+            <p>
+            • You can see live market prices and trade instantly.<br>
+            • You can trade anytime; markets are active 24/7.<br>
+            • You can start with small capital.<br>
+            • It is possible to lose money fast.<br>
+            • Trading requires discipline and patience.<br>
+            • Borrowing too much money (leverage) increases risk.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>4. What Helps You Win</h3>
+            <p>
+            • Learn to read charts (technical analysis).<br>
+            • Follow global events and news (fundamental analysis).<br>
+            • Do not risk money you cannot afford to lose.<br>
+            • Stay calm and follow your trading plan.
+            </p>
+        </div>
+
+        <div class="box">
+        <p>
+        <b>In short:</b> Trading is not a get‑rich‑quick scheme.
+        It is a skill that improves with practice and patience.
+        </p>
+        </div>
+    </div>    
+
+</main>
+
+<footer class="text-center bg-dark text-white py-3 mt-4">
+    © 2026 Kealeboga Obonye
+</footer>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
 </body>
-
 </html>
-
