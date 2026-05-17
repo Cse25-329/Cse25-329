@@ -62,25 +62,6 @@ footer {
     border-top: 1px solid lightgray;
 }
 
-
-.dark-mode {
-    background-color: black;
-    color: black;
-}
-
-.dark-mode section {
-    background-color: dimgray;
-    border: 1px solid gray;
-}
-
-.dark-mode header {
-    background-color: dimgray;
-}
-
-.dark-mode footer {
-    border-top: 1px solid gray;
-}
-
 button {
     padding: 8px 15px;
     border: none;
